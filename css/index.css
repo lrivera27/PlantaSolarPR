@@ -26,3 +26,12 @@
   -o-background-size: cover;
   background-size: cover;
 }
+
+#section2, #section3 {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+article {
+  border-width: thin;
+}
