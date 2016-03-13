@@ -24,15 +24,12 @@
 }
 
 #section1 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/section1_solar.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url(../images/section1_solar.jpg);
   display: flex;
   justify-content: center;
   align-content: center;
   align-items: center;
-}
-
-#section1 h3 {
-  font-size: 90px;
+  flex-direction: column;
 }
 
 #section2s {
@@ -45,8 +42,5 @@
   justify-content: center;
   align-content: center;
   align-items: center;
-}
-
-#section3 h3 {
-  font-size: 90px;
+  flex-direction: column;
 }
