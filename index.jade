@@ -10,6 +10,9 @@ html
 		script(src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js", charset="utf-8")
 		//Bootstrap Script
 		script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js")
+		
+		//Font Awesome CSS
+		link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css")
 
 		// External CSS
 
@@ -28,12 +31,69 @@ html
 		title Planta Solar PR
 
 	body
+		//Main Carousel
+		#home-carousel.carousel.slide(data-ride='carousel')
+			// Indicators
+			ol.carousel-indicators
+				li.active(data-target='#home-carousel', data-slide-to='0')
+				li(data-target='#home-carousel', data-slide-to='1')
+				li(data-target='#home-carousel', data-slide-to='2')
+				li(data-target='#home-carousel', data-slide-to='3')
+			// Wrapper for slides
+			.carousel-inner(role='listbox')
+				.item.active
+					img(src='http://skitterphoto.com/wp-content/uploads/2014/05/Playa-Porto-Marie-free-license-CC0-1024x682.jpg', alt='Slide 1')
+					.carousel-caption
+						h3 Desconectate de la AEE
+						p Te ayudamos a desconectarte de la AEE y no depender de cambios de tarifas
+				.item
+					img(src='https://placehold.it/1024x400', alt='Slide 2')
+					.carousel-caption
+						h3 Chania
+						p The atmosphere in Chania has a touch of Florence and Venice.
+				.item
+					img(src='https://placehold.it/1024x400', alt='Slide 3')
+					.carousel-caption
+						h3 Flowers
+						p Beatiful flowers in Kolymbari, Crete.
+				.item
+					img(src='https://placehold.it/1024x400', alt='Slide 4')
+					.carousel-caption
+						h3 Flowers
+						p Beatiful flowers in Kolymbari, Crete.
+			// Left and right controls
+			a.left.carousel-control(href='#home-carousel', role='button', data-slide='prev')
+				span.glyphicon.glyphicon-chevron-left(aria-hidden='true')
+				span.sr-only Previous
+			a.right.carousel-control(href='#home-carousel', role='button', data-slide='next')
+				span.glyphicon.glyphicon-chevron-right(aria-hidden='true')
+				span.sr-only Next
+
+		#home-section1
+			.row.text-center
+				.col-xs-12.col-md-3
+					i.fa.fa-cogs.fa-5x
+					h4 Experiencia
+					
+				.col-xs-12.col-md-3
+					i.fa.fa-diamond.fa-5x
+					h4 100% Puertorriqueños
+					p Optamos por un Puerto Rico verde
+
+				.col-xs-12.col-md-3
+					i.fa.fa-cog.fa-5x
+					h4 Diseñamos ee instalamos a su necesidad
+
+				.col-xs-12.col-md-3
+					img(src="../images/aconer.png", alt="")
+					h4 Acreditados por Aconer
+
 		.white-font.parallax#section1
 			h1 Planta Solar PR
 			h2 Diseñamos e Instalamos a tu necesidad
 			h3 Miembros de ACONER
 			img(src="../images/aconer.png", alt="")
-			
+
 		.container-fluid#section2
 			h3 Section 2
 			
